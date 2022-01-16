@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     ...styleTheme.myButton,
   },
   icon: {},
+  text: {},
 }));
 
 const Leftbar: NextPage = () => {
@@ -24,28 +25,21 @@ const Leftbar: NextPage = () => {
     <Container>
       <div className={classes.item}>
         <Home className={classes.icon} />
-        <Typography>Homepage</Typography>
+        <Typography className={classes.text}>Homepage</Typography>
       </div>
       <div className={classes.item}>
         <Home className={classes.icon} />
-        <Typography>Homepage</Typography>
+        <Typography className={classes.text}>Homepage</Typography>
       </div>
       <div className={classes.item}>
         <Home className={classes.icon} />
-        <Typography>Homepage</Typography>
+        <Typography className={classes.text}>Homepage</Typography>
       </div>
       <div className={classes.item}>
         <Home className={classes.icon} />
-        <Typography>Homepage</Typography>
+        <Typography className={classes.text}>Homepage</Typography>
       </div>
-      <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography>Homepage</Typography>
-      </div>
-      <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography>Homepage</Typography>
-      </div>
+     
     </Container>
   );
 };
