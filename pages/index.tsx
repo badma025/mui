@@ -6,6 +6,7 @@ import SendIcon from "@mui/icons-material/Message";
 import { makeStyles } from "@mui/styles";
 import { styleTheme } from "./theme";
 import Navbar from "../components/Navbar";
+import Leftbar from "../components/Leftbar";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Leftbar/>
     </div>
   );
 };

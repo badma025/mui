@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import { Mail, Notifications, Search } from "@mui/icons-material";
+import { Cancel, Mail, Notifications, Search } from "@mui/icons-material";
 import { useState } from "react";
 
 const useStyles = makeStyles((theme: any) => ({
@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme: any) => ({
     [theme.breakpoints.down("sm")]: {
       // @ts-ignore
       display: (props) => (props.open ? "flex" : "none"),
+      // width: "70%",
     },
   },
   input: {
@@ -66,9 +67,16 @@ const useStyles = makeStyles((theme: any) => ({
   badge: {
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
+    cursor: "pointer",
   },
   searchButton: {
     marginRight: theme.spacing(2),
+    [theme.breakpoints.up("sm")]: {
+      display: "none",
+    },
+    cursor: "pointer",
+  },
+  cancel: {
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
@@ -92,6 +100,7 @@ const Navbar: NextPage = () => {
         <div className={classes.search}>
           <SearchIcon className={classes.searchIcon} />
           <InputBase placeholder="Search..." className={classes.input} />
+          <Cancel className={classes.cancel} onClick={() => setOpen(false)} />
         </div>
         <div className={classes.icons}>
           <Search
