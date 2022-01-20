@@ -62,6 +62,7 @@ const useStyles = makeStyles((theme: any) => ({
       display: "none",
     },
   },
+  text: {},
 }));
 
 const Leftbar: NextPage = () => {
@@ -109,6 +110,7 @@ const Leftbar: NextPage = () => {
         <ExitToApp className={classes.icon} />
         <Typography className={classes.title}>Logout</Typography>
       </div>
+     
     </Container>
   );
 };
