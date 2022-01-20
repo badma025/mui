@@ -5,5 +5,5 @@ export const styleTheme = createTheme({
   // @ts-ignore
   themeColor: {
     backgroundColor: "#fc6f03",
-  },
+    },
 });

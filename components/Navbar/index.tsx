@@ -58,6 +58,7 @@ const useStyles = makeStyles((theme: any) => ({
   theme: {
     // @ts-ignore
     ...styleTheme.themeColor,
+    marginBottom: theme.spacing(1),
   },
   icons: {
     alignItems: "center",
@@ -89,7 +90,7 @@ const Navbar: NextPage = () => {
   const classes = useStyles({ open });
 
   return (
-    <AppBar className={classes.theme}>
+    <AppBar position="fixed" className={classes.theme}>
       <Toolbar className={classes.toolbar}>
         <Typography variant="h6" className={classes.logoLg}>
           turbofuture1
